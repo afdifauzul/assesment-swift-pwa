@@ -1,123 +1,46 @@
-## General Information
+# Assesment Swift-PWA
+## Link Teamwork Task:
+`[26706874](https://teamwork.icubeonline.com/#/tasks/26706874)`
 
-This is SwiftPWA base project bootstrapped with [Next.js](https://nextjs.org/).
+## What's New:
 
-Demo: [https://pwa.getswift.asia/](https://pwa.getswift.asia/)
-
-Roadmap: [Click here](https://bit.ly/swift-timeline)
-
-Release Note: [Click here](https://github.com/icubeus/swift-pwa/releases)
-
-Latest Stable Version branch: `master` (for more version, please check tags)
-
-Development branch: `develop-v2`
-
-Launching Checklist:
-- [Full PWA mode Checklist](https://teamwork.icubeonline.com/#/projects/120618/notebooks/354196) 
-- [Checkout Only / PWA Checkout mode Checklist](https://teamwork.icubeonline.com/#/projects/120618/notebooks/362538) 
-
-## Requirements
-- NodeJS v14
-
-## Pre-Installation
-### Setup Host and Graphql Endpoint
-1. Open file [swift.config.js](swift.config.js)
-2. Edit the host of each environment at thes lines:
-```
-const HOST = {
-    local: 'http://localhost:3000'
-    dev: '[dev url]',
-    stage: '[stage url]',
-    prod: '[prod url]',
-};
-```
-3. Edit GraphQl endpoint of each environment at these lines:
-```
-const graphqlEndpoint = {
-    local: '[gql endpoint for local]'
-    dev: '[gql endpoint for dev]',
-    stage: '[gql endpoint for stage]',
-    prod: '[gql endpoint for prod]',
-};
-```
-
-## Installation
-You can run SwiftPWA with or without docker.
-### Without Docker
-#### Dev mode
-1. Build static assets (do once only for the first time)
-```
-npm run assets:build
-# or
-yarn assets:build
-```
-2. Run it (sample for local environment):
-```bash
-npm run local
-# or
-yarn local
-``` 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:bulb: Please find more commands for another environments in [package.json](package.json)  
-
-3. Open [http://localhost:3000](http://localhost:3000) on browser to see the frontend.
-
-#### Prod mode
-1. Build the static assets and the project
-```bash
-npm run build
-# or
-yarn build
-```
-2. Run it (sample for local environment):
-```bash
-npm run local:start
-# or
-yarn local:start
-```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:bulb: Please find more commands for another environments in [package.json](package.json)  
-
-3. Open [http://localhost:3000](http://localhost:3000) on browser to see the frontend.
-
-### With Docker
-#### Local environment (dev mode): 
-1. build: `docker-compose -f ./docker/local/docker-compose.yml build`
-2. run: `docker-compose -f ./docker/local/docker-compose.yml up`
+Final Assestment PWA/ Swift:
+1. Lanjutkan Mini 
+    Task:
+    - buat custom page yang mengakses data product.
+    - buat custom component yang di pakai di module lain
+    - override salah satu module core (bisa cart page / checkout). buat perubahan di componentnya
+2. Override
+    - override register page
+    - override login page
+    - override minicart
+    - override header top menu
+    - override shopping cart 
 
 
-Alternatively, build and run in one step: `docker-compose -f ./docker/local/docker-compose.yml up --build`
+## Screenshot:
+1.1
+> <img src="https://user-images.githubusercontent.com/104412066/174130057-38b6337f-5684-4410-b8c1-b18ffa393d0d.png" width="relative" height="500">
+
+1.2
+> <img src="https://user-images.githubusercontent.com/104412066/174130457-c912f826-e61b-4d7b-bab6-d913216369c0.png" width="relative" height="500">
+
+1.3 
+> <img src="https://user-images.githubusercontent.com/104412066/174130420-964ed3da-5a12-4647-b381-90dfcfec00eb.png" width="relative" height="500">
 
 
-#### Dev environment (prod mode): 
-1. build: `docker-compose -f ./docker/dev/docker-compose.yml build`
-2. run: `docker-compose -f ./docker/dev/docker-compose.yml up`
+2.1
+> <img src="https://user-images.githubusercontent.com/104412066/174130608-373fb7d5-0418-4b14-8c96-f86b4a3526f1.png" width="relative" height="500">
 
-Alternatively, build and run in one step: `docker-compose -f ./docker/dev/docker-compose.yml up --build`
+2.2
+> <img src="https://user-images.githubusercontent.com/104412066/174130652-61b20deb-958f-4ea7-aa5f-046c3cd987bd.png" width="relative" height="500">
 
-#### Prod environment (prod mode):
-1. build: `docker-compose build`
-2. run: `docker-composer up`
+2.3
+> <img src="https://user-images.githubusercontent.com/104412066/174130699-7fd16f87-d986-4b62-a866-5d54d69e3f21.png" width="relative" height="500">
 
-Alternatively, build and run in one step: `docker-compose up --build`
+2.4
+> <img src="https://user-images.githubusercontent.com/104412066/174130747-74f86111-cad5-4971-8f20-e4cd93c711f8.png" width="relative" height="500">
 
-## The SwiftPWA Cores
-### Modules
-Click [here](core/modules/README.md) for more detail.
-### Helpers
-Click [here](core/helpers/readme.md) for more detail.
-### Libraries
-Click [here](core/lib/readme.md) for more detail.
-### Public
-Click [here](core/public/readme.md) for more detail.
-
-# Overriding
-Do not ever touch files under under [core](core) folder!
-Do override in [src](src) folder instead!
-
-# Homepage Setup
-By default, Swift PWA comes with hardcode contents which are sliders, highlighted products list, and highlighted categories.
-But we recommend to use CMS Page instead.
-To do so please follow this step:
-1. Download the sample CMS page from [here](sample/pwa-homepage.csv), then upload/import on Magento backoffice using Firebear feature
-2. Update the Swift PWA swift.config.js
-    - home ▸ useCmsPage ▸ enable = true
-    - home ▸ useCmsPage ▸ identifier = "pwa-homepage" or any CMS identifier you created for PWA Homepage.
+2.5
+> <img src="https://user-images.githubusercontent.com/104412066/174130420-964ed3da-5a12-4647-b381-90dfcfec00eb.png" width="relative" height="500">
+ 
